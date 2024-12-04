@@ -14,7 +14,10 @@ test('LoginLogoutTest', async ({ page }) => {
   //Follow WebDriver's pattern
   //<tool>.<findsomething>.<dosomethingwithit>
   //WD: driver.FindElement(By.LinkText("Login To Restricted Area")).Click();
-  await page.getByRole('link', { name: 'Login To Restricted Area' }).click();
+  //await page.getByRole('link', { name: 'Login To Restricted Area' }).click();
+  //await page.getByText('Login').click();
+  //await page.locator('text=Login').click();
+  //await page.locator(':text("Login")').click();
 
   //Chaining locators works for Playwright as it does in WebDriver (and Cypress...)
   //The below finds a table row, then looks for an element inside with an id of username, before clicking that elm
