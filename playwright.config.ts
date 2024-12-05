@@ -31,6 +31,7 @@ export default defineConfig({
 
     /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
     trace: 'on-first-retry',
+    
     //headless: false, //Github CI needs headless
     launchOptions: {slowMo: 500},
     actionTimeout: 5000, //Set default action timeout to 5s (normally no timeout)
