@@ -23,6 +23,7 @@ export default defineConfig({
   workers: process.env.CI ? 1 : undefined,
   /* Reporter to use. See https://playwright.dev/docs/test-reporters */
   reporter: 'html',
+  timeout: 20 * 1000, //Change total allowable test run time to 20s
   /* Shared settings for all the projects below. See https://playwright.dev/docs/api/class-testoptions. */
   use: {
     /* Base URL to use in actions like `await page.goto('/')`. */
@@ -32,6 +33,7 @@ export default defineConfig({
     trace: 'on-first-retry',
     //headless: false, //Github CI needs headless
     launchOptions: {slowMo: 500},
+    actionTimeout: 5000, //Set default action timeout to 5s (normally no timeout)
   },
 
   /* Configure projects for major browsers */
