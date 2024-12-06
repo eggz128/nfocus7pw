@@ -30,7 +30,7 @@ test('Pomified', async ({page})=>{
 
 });
 
-test('Screenshot demo', async ({page})=>{
+test('Screenshot demo', async ({page, browserName})=>{
   await page.goto('https://www.edgewordstraining.co.uk/webdriver2/docs/basicHtml.html')
   await page.screenshot({path: './manualscreenshots/page-screenshot.png'});
   await page.screenshot({path: './manualscreenshots/whole-page-screenshot.png', fullPage: true});
@@ -41,4 +41,9 @@ test('Screenshot demo', async ({page})=>{
             table#htmlTable {border-collapse: collapse}
     ` //HTML table rows cannot have a border unless the table's border collapse model is set to collapse
   })
+  if(browserName=='chromium'){ //Firefox and WebKit cant make pdf's (in PW)
+    await page.pdf({path: './manualscreenshots/printed.pdf'})
+  }
+  
+
 })
