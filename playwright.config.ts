@@ -1,4 +1,5 @@
 import { defineConfig, devices } from '@playwright/test';
+import { TestOptions } from './tests/my-test';
 
 /**
  * Read environment variables from file.
@@ -11,7 +12,7 @@ import { defineConfig, devices } from '@playwright/test';
 /**
  * See https://playwright.dev/docs/test-configuration.
  */
-export default defineConfig({
+export default defineConfig<TestOptions>({ //Add <TestOptions> - missing from slides
   testDir: './tests',
   /* Run tests in files in parallel */
   fullyParallel: true,
@@ -41,12 +42,15 @@ export default defineConfig({
   projects: [
     {
       name: 'chromium',
-      use: { ...devices['Desktop Chrome'] },
+      use: { ...devices['Desktop Chrome'], 
+        siteusername: 'webdriver',},
     },
 
     {
       name: 'firefox',
-      use: { ...devices['Desktop Firefox'] },
+      use: { ...devices['Desktop Firefox'],
+        siteusername: 'edgewords',
+       },
     },
 
     {
