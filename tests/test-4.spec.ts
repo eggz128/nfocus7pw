@@ -1,13 +1,14 @@
 import { test, expect } from '@playwright/test'
 
 //These hooks apply to all tests in this file
-test.beforeAll(async ({page})=>{
+test.beforeAll(()=>{
     console.log('Runs before any tests in this file execute');
-    await page.goto('https://www.google.com');
+    
 });
 
-test.beforeEach(()=>{
+test.beforeEach(async ({page})=>{
     console.log('Runs before each and every test');
+    await page.goto('https://www.google.com');
 });
 
 test.afterEach(()=>{
