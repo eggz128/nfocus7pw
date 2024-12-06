@@ -27,4 +27,18 @@ test('Pomified', async ({page})=>{
 
   const addRecordPage = new AddRecordPOM(page);
   await expect(addRecordPage.heading).toHaveText('Add A Record To the Database');
+
 });
+
+test('Screenshot demo', async ({page})=>{
+  await page.goto('https://www.edgewordstraining.co.uk/webdriver2/docs/basicHtml.html')
+  await page.screenshot({path: './manualscreenshots/page-screenshot.png'});
+  await page.screenshot({path: './manualscreenshots/whole-page-screenshot.png', fullPage: true});
+  await page.locator('#htmlTable').screenshot({path: './manualscreenshots/htmltable.png', 
+    mask: [page.locator('#TableVal2')],
+    maskColor: 'rgba(214, 21, 179,0.5)', //default mask colour is magenta #FF00FF
+    style: `#htmlTable tr:nth-child(3) {border: 10px solid red}
+            table#htmlTable {border-collapse: collapse}
+    ` //HTML table rows cannot have a border unless the table's border collapse model is set to collapse
+  })
+})
