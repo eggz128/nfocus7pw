@@ -26,7 +26,8 @@ export default defineConfig<TestOptions>({ //Add <TestOptions> - missing from sl
   reporter: [
             ['html'],
             ['json', {outputFile: 'json-results/test-results.json'}],
-            ['junit', {outputFile: 'junit-results/test-results.xml'}]
+            ['junit', {outputFile: 'junit-results/test-results.xml'}],
+            ['allure-playwright']
           ],
   timeout: 20 * 1000, //Change total allowable test run time to 20s
   /* Shared settings for all the projects below. See https://playwright.dev/docs/api/class-testoptions. */

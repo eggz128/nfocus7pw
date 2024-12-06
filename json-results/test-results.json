@@ -22,7 +22,7 @@
       [
         "json",
         {
-          "outputFile": "json-results/test-results.josn"
+          "outputFile": "json-results/test-results.json"
         }
       ],
       [
@@ -30,6 +30,10 @@
         {
           "outputFile": "junit-results/test-results.xml"
         }
+      ],
+      [
+        "E:\\JSTS\\nfocus7pw\\node_modules\\allure-playwright\\dist\\cjs\\index.js",
+        null
       ]
     ],
     "reportSlowTests": {
@@ -109,12 +113,12 @@
                 {
                   "workerIndex": 0,
                   "status": "passed",
-                  "duration": 6174,
+                  "duration": 5756,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2024-12-06T11:21:40.889Z",
+                  "startTime": "2024-12-06T11:29:49.715Z",
                   "attachments": []
                 }
               ],
@@ -141,12 +145,12 @@
                 {
                   "workerIndex": 1,
                   "status": "passed",
-                  "duration": 4499,
+                  "duration": 5294,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2024-12-06T11:21:40.891Z",
+                  "startTime": "2024-12-06T11:29:49.194Z",
                   "attachments": []
                 }
               ],
@@ -173,12 +177,12 @@
                 {
                   "workerIndex": 2,
                   "status": "passed",
-                  "duration": 3818,
+                  "duration": 3612,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2024-12-06T11:21:40.796Z",
+                  "startTime": "2024-12-06T11:29:49.387Z",
                   "attachments": []
                 }
               ],
@@ -210,7 +214,7 @@
                 {
                   "workerIndex": 3,
                   "status": "passed",
-                  "duration": 2294,
+                  "duration": 2864,
                   "errors": [],
                   "stdout": [
                     {
@@ -219,7 +223,7 @@
                   ],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2024-12-06T11:21:40.989Z",
+                  "startTime": "2024-12-06T11:29:49.538Z",
                   "attachments": [
                     {
                       "name": "Viewpoert screenshot",
@@ -260,14 +264,14 @@
               "projectName": "firefox",
               "results": [
                 {
-                  "workerIndex": 4,
+                  "workerIndex": 5,
                   "status": "passed",
-                  "duration": 14453,
+                  "duration": 15129,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2024-12-06T11:21:49.753Z",
+                  "startTime": "2024-12-06T11:29:58.152Z",
                   "attachments": []
                 }
               ],
@@ -292,14 +296,14 @@
               "projectName": "firefox",
               "results": [
                 {
-                  "workerIndex": 5,
+                  "workerIndex": 4,
                   "status": "passed",
-                  "duration": 13158,
+                  "duration": 12656,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2024-12-06T11:21:49.761Z",
+                  "startTime": "2024-12-06T11:29:58.019Z",
                   "attachments": []
                 }
               ],
@@ -326,12 +330,12 @@
                 {
                   "workerIndex": 6,
                   "status": "passed",
-                  "duration": 10760,
+                  "duration": 13922,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2024-12-06T11:21:51.192Z",
+                  "startTime": "2024-12-06T11:29:58.987Z",
                   "attachments": []
                 }
               ],
@@ -363,7 +367,7 @@
                 {
                   "workerIndex": 7,
                   "status": "passed",
-                  "duration": 10108,
+                  "duration": 11101,
                   "errors": [],
                   "stdout": [
                     {
@@ -372,7 +376,7 @@
                   ],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2024-12-06T11:21:56.803Z",
+                  "startTime": "2024-12-06T11:30:05.229Z",
                   "attachments": [
                     {
                       "name": "Viewpoert screenshot",
@@ -413,14 +417,14 @@
               "projectName": "webkit",
               "results": [
                 {
-                  "workerIndex": 10,
+                  "workerIndex": 9,
                   "status": "passed",
-                  "duration": 7973,
+                  "duration": 9864,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2024-12-06T11:22:21.087Z",
+                  "startTime": "2024-12-06T11:30:32.213Z",
                   "attachments": []
                 }
               ],
@@ -447,12 +451,12 @@
                 {
                   "workerIndex": 8,
                   "status": "passed",
-                  "duration": 6849,
+                  "duration": 8570,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2024-12-06T11:22:17.813Z",
+                  "startTime": "2024-12-06T11:30:31.265Z",
                   "attachments": []
                 }
               ],
@@ -477,14 +481,14 @@
               "projectName": "webkit",
               "results": [
                 {
-                  "workerIndex": 9,
+                  "workerIndex": 11,
                   "status": "passed",
-                  "duration": 5975,
+                  "duration": 3417,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2024-12-06T11:22:20.186Z",
+                  "startTime": "2024-12-06T11:30:40.722Z",
                   "attachments": []
                 }
               ],
@@ -514,9 +518,9 @@
               "projectName": "webkit",
               "results": [
                 {
-                  "workerIndex": 11,
+                  "workerIndex": 10,
                   "status": "passed",
-                  "duration": 3019,
+                  "duration": 5877,
                   "errors": [],
                   "stdout": [
                     {
@@ -525,7 +529,7 @@
                   ],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2024-12-06T11:22:27.343Z",
+                  "startTime": "2024-12-06T11:30:32.439Z",
                   "attachments": [
                     {
                       "name": "Viewpoert screenshot",
@@ -558,8 +562,8 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2024-12-06T11:21:37.459Z",
-    "duration": 53279.331000000006,
+    "startTime": "2024-12-06T11:29:45.285Z",
+    "duration": 59308.319,
     "expected": 12,
     "skipped": 0,
     "unexpected": 0,

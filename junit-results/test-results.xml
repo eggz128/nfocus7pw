@@ -1,12 +1,12 @@
-<testsuites id="" name="" tests="12" failures="0" skipped="0" errors="0" time="53.279331000000006">
-<testsuite name="test-5.spec.ts" timestamp="2024-12-06T11:21:37.534Z" hostname="chromium" tests="4" failures="0" skipped="0" time="16.785" errors="0">
-<testcase name="Non POM Traditional" classname="test-5.spec.ts" time="6.174">
+<testsuites id="" name="" tests="12" failures="0" skipped="0" errors="0" time="59.308319000000004">
+<testsuite name="test-5.spec.ts" timestamp="2024-12-06T11:29:45.365Z" hostname="chromium" tests="4" failures="0" skipped="0" time="17.526" errors="0">
+<testcase name="Non POM Traditional" classname="test-5.spec.ts" time="5.756">
 </testcase>
-<testcase name="Pomified" classname="test-5.spec.ts" time="4.499">
+<testcase name="Pomified" classname="test-5.spec.ts" time="5.294">
 </testcase>
-<testcase name="Screenshot demo" classname="test-5.spec.ts" time="3.818">
+<testcase name="Screenshot demo" classname="test-5.spec.ts" time="3.612">
 </testcase>
-<testcase name="Reporting demos" classname="test-5.spec.ts" time="2.294">
+<testcase name="Reporting demos" classname="test-5.spec.ts" time="2.864">
 <properties>
 <property name="Some custom type" value="Some description">
 </property>
@@ -19,14 +19,14 @@
 </system-out>
 </testcase>
 </testsuite>
-<testsuite name="test-5.spec.ts" timestamp="2024-12-06T11:21:37.534Z" hostname="firefox" tests="4" failures="0" skipped="0" time="48.479" errors="0">
-<testcase name="Non POM Traditional" classname="test-5.spec.ts" time="14.453">
+<testsuite name="test-5.spec.ts" timestamp="2024-12-06T11:29:45.365Z" hostname="firefox" tests="4" failures="0" skipped="0" time="52.808" errors="0">
+<testcase name="Non POM Traditional" classname="test-5.spec.ts" time="15.129">
 </testcase>
-<testcase name="Pomified" classname="test-5.spec.ts" time="13.158">
+<testcase name="Pomified" classname="test-5.spec.ts" time="12.656">
 </testcase>
-<testcase name="Screenshot demo" classname="test-5.spec.ts" time="10.76">
+<testcase name="Screenshot demo" classname="test-5.spec.ts" time="13.922">
 </testcase>
-<testcase name="Reporting demos" classname="test-5.spec.ts" time="10.108">
+<testcase name="Reporting demos" classname="test-5.spec.ts" time="11.101">
 <properties>
 <property name="Some custom type" value="Some description">
 </property>
@@ -39,14 +39,14 @@
 </system-out>
 </testcase>
 </testsuite>
-<testsuite name="test-5.spec.ts" timestamp="2024-12-06T11:21:37.534Z" hostname="webkit" tests="4" failures="0" skipped="0" time="23.816" errors="0">
-<testcase name="Non POM Traditional" classname="test-5.spec.ts" time="7.973">
+<testsuite name="test-5.spec.ts" timestamp="2024-12-06T11:29:45.365Z" hostname="webkit" tests="4" failures="0" skipped="0" time="27.728" errors="0">
+<testcase name="Non POM Traditional" classname="test-5.spec.ts" time="9.864">
 </testcase>
-<testcase name="Pomified" classname="test-5.spec.ts" time="6.849">
+<testcase name="Pomified" classname="test-5.spec.ts" time="8.57">
 </testcase>
-<testcase name="Screenshot demo" classname="test-5.spec.ts" time="5.975">
+<testcase name="Screenshot demo" classname="test-5.spec.ts" time="3.417">
 </testcase>
-<testcase name="Reporting demos" classname="test-5.spec.ts" time="3.019">
+<testcase name="Reporting demos" classname="test-5.spec.ts" time="5.877">
 <properties>
 <property name="Some custom type" value="Some description">
 </property>
