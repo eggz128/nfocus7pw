@@ -23,6 +23,8 @@ test.describe('A test suite', () => {
     test.beforeEach(()=>{
         console.log('Runs before each and every test in this test describe block');
     });
+    test.describe.configure({ retries: 2,mode: 'serial', timeout: 15000 }); //Tests in this describe get 2 retries,opt out of parallel, and have 15s to finish
+
     test('Capturing values',{tag:['@thisisatag','@thistoo']}, async ({ page }) => {
 
         await page.goto("https://www.edgewordstraining.co.uk/webdriver2/docs/forms.html");
@@ -54,7 +56,7 @@ test.describe('A test suite', () => {
 
     });
 
-    test.describe('An inner suite',() => {
+    test.describe.serial('An inner suite',() => { //Alternative way to mark a describe for serial execution
         test.setTimeout(10000); //Tests in this describe block only get 10s total to execute
         test.use({actionTimeout: 9000}) //Tests in this desribe block get 9s action timeouts
         
