@@ -1,0 +1,62 @@
+<testsuites id="" name="" tests="12" failures="0" skipped="0" errors="0" time="53.279331000000006">
+<testsuite name="test-5.spec.ts" timestamp="2024-12-06T11:21:37.534Z" hostname="chromium" tests="4" failures="0" skipped="0" time="16.785" errors="0">
+<testcase name="Non POM Traditional" classname="test-5.spec.ts" time="6.174">
+</testcase>
+<testcase name="Pomified" classname="test-5.spec.ts" time="4.499">
+</testcase>
+<testcase name="Screenshot demo" classname="test-5.spec.ts" time="3.818">
+</testcase>
+<testcase name="Reporting demos" classname="test-5.spec.ts" time="2.294">
+<properties>
+<property name="Some custom type" value="Some description">
+</property>
+</properties>
+<system-out>
+<![CDATA[Attached screenshot to report
+
+[[ATTACHMENT|..\test-results\test-5-Reporting-demos-chromium\attachments\Viewpoert-screenshot-f413aa55320d1720c22f501ae1edab3d577d8fcc.png]]
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="test-5.spec.ts" timestamp="2024-12-06T11:21:37.534Z" hostname="firefox" tests="4" failures="0" skipped="0" time="48.479" errors="0">
+<testcase name="Non POM Traditional" classname="test-5.spec.ts" time="14.453">
+</testcase>
+<testcase name="Pomified" classname="test-5.spec.ts" time="13.158">
+</testcase>
+<testcase name="Screenshot demo" classname="test-5.spec.ts" time="10.76">
+</testcase>
+<testcase name="Reporting demos" classname="test-5.spec.ts" time="10.108">
+<properties>
+<property name="Some custom type" value="Some description">
+</property>
+</properties>
+<system-out>
+<![CDATA[Attached screenshot to report
+
+[[ATTACHMENT|..\test-results\test-5-Reporting-demos-firefox\attachments\Viewpoert-screenshot-f413aa55320d1720c22f501ae1edab3d577d8fcc.png]]
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="test-5.spec.ts" timestamp="2024-12-06T11:21:37.534Z" hostname="webkit" tests="4" failures="0" skipped="0" time="23.816" errors="0">
+<testcase name="Non POM Traditional" classname="test-5.spec.ts" time="7.973">
+</testcase>
+<testcase name="Pomified" classname="test-5.spec.ts" time="6.849">
+</testcase>
+<testcase name="Screenshot demo" classname="test-5.spec.ts" time="5.975">
+</testcase>
+<testcase name="Reporting demos" classname="test-5.spec.ts" time="3.019">
+<properties>
+<property name="Some custom type" value="Some description">
+</property>
+</properties>
+<system-out>
+<![CDATA[Attached screenshot to report
+
+[[ATTACHMENT|..\test-results\test-5-Reporting-demos-webkit\attachments\Viewpoert-screenshot-f413aa55320d1720c22f501ae1edab3d577d8fcc.png]]
+]]>
+</system-out>
+</testcase>
+</testsuite>
+</testsuites>

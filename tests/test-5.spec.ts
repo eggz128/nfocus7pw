@@ -47,3 +47,23 @@ test('Screenshot demo', async ({page, browserName})=>{
   
 
 })
+
+test('Reporting demos',{annotation: {type: 'Some custom type', description: 'Some description'}} ,async ({page}, testInfo)=>{
+  
+  await page.goto('https://www.edgewordstraining.co.uk/webdriver2/docs/basicHtml.html')
+  await page.screenshot({path: './manualscreenshots/page-screenshot.png'});
+  await testInfo.attach('Viewpoert screenshot', {path: './manualscreenshots/page-screenshot.png'})
+  console.log('Attached screenshot to report');
+
+
+  await testInfo.attach('Some text to attach', {
+    contentType: 'text/plain',
+    body: 'This is the attached text'
+  })
+
+  const screenshot = await page.screenshot({path: './manualscreenshots/whole-page-screenshot.png', fullPage: true});
+  await testInfo.attach('Screenshot stored in memory', {
+    contentType: 'image/png',
+    body: screenshot
+  });
+})

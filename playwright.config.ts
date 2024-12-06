@@ -23,7 +23,11 @@ export default defineConfig<TestOptions>({ //Add <TestOptions> - missing from sl
   /* Opt out of parallel tests on CI. */
   workers: process.env.CI ? 1 : undefined,
   /* Reporter to use. See https://playwright.dev/docs/test-reporters */
-  reporter: 'html',
+  reporter: [
+            ['html'],
+            ['json', {outputFile: 'json-results/test-results.json'}],
+            ['junit', {outputFile: 'junit-results/test-results.xml'}]
+          ],
   timeout: 20 * 1000, //Change total allowable test run time to 20s
   /* Shared settings for all the projects below. See https://playwright.dev/docs/api/class-testoptions. */
   use: {
@@ -36,6 +40,8 @@ export default defineConfig<TestOptions>({ //Add <TestOptions> - missing from sl
     //headless: false, //Github CI needs headless
     launchOptions: {slowMo: 500},
     actionTimeout: 5000, //Set default action timeout to 5s (normally no timeout)
+    //screenshot: 'on',
+    //video: 'on',
   },
 
   /* Configure projects for major browsers */
