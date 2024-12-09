@@ -1,24 +1,10 @@
-<testsuites id="" name="" tests="1" failures="1" skipped="0" errors="0" time="5.889493000000715">
-<testsuite name="APITesting.spec.ts" timestamp="2024-12-09T09:52:27.881Z" hostname="chromium" tests="1" failures="1" skipped="0" time="0.189" errors="0">
-<testcase name="Basic auth" classname="APITesting.spec.ts" time="0.189">
-<failure message="APITesting.spec.ts:31:5 Basic auth" type="FAILURE">
-<![CDATA[  [chromium] › APITesting.spec.ts:31:5 › Basic auth ────────────────────────────────────────────────
-
-    Error: expect(received).toEqual(expected) // deep equality
-
-    Expected: 200
-    Received: 401
-
-      38 |     });
-      39 |     const resp = await context.get(baseRequestUrl + '/users');
-    > 40 |     expect(resp.status()).toEqual(200);
-         |                           ^
-      41 |     console.log((await resp.body()).toString());
-      42 | });
-      43 |
-        at E:\JSTS\nfocus7pw\tests\APITesting.spec.ts:40:27
+<testsuites id="" name="" tests="1" failures="0" skipped="0" errors="0" time="5.441211999999359">
+<testsuite name="APITesting.spec.ts" timestamp="2024-12-09T09:56:39.930Z" hostname="chromium" tests="1" failures="0" skipped="0" time="0.186" errors="0">
+<testcase name="POST a new product" classname="APITesting.spec.ts" time="0.186">
+<system-out>
+<![CDATA[New product created with id: undefined
 ]]>
-</failure>
+</system-out>
 </testcase>
 </testsuite>
 </testsuites>

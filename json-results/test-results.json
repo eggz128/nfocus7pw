@@ -99,8 +99,8 @@
       "line": 0,
       "specs": [
         {
-          "title": "Basic auth",
-          "ok": false,
+          "title": "POST a new product",
+          "ok": true,
           "tags": [],
           "tests": [
             {
@@ -111,54 +111,27 @@
               "projectName": "chromium",
               "results": [
                 {
-                  "workerIndex": 7,
-                  "status": "failed",
-                  "duration": 189,
-                  "error": {
-                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\nExpected: \u001b[32m200\u001b[39m\nReceived: \u001b[31m401\u001b[39m",
-                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\nExpected: \u001b[32m200\u001b[39m\nReceived: \u001b[31m401\u001b[39m\n    at E:\\JSTS\\nfocus7pw\\tests\\APITesting.spec.ts:40:27",
-                    "matcherResult": {
-                      "actual": 401,
-                      "expected": 200,
-                      "message": "\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\nExpected: \u001b[32m200\u001b[39m\nReceived: \u001b[31m401\u001b[39m",
-                      "name": "toEqual",
-                      "pass": false
-                    },
-                    "location": {
-                      "file": "E:\\JSTS\\nfocus7pw\\tests\\APITesting.spec.ts",
-                      "column": 27,
-                      "line": 40
-                    },
-                    "snippet": "\u001b[0m \u001b[90m 38 |\u001b[39m     })\u001b[33m;\u001b[39m\n \u001b[90m 39 |\u001b[39m     \u001b[36mconst\u001b[39m resp \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m context\u001b[33m.\u001b[39m\u001b[36mget\u001b[39m(baseRequestUrl \u001b[33m+\u001b[39m \u001b[32m'/users'\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 40 |\u001b[39m     expect(resp\u001b[33m.\u001b[39mstatus())\u001b[33m.\u001b[39mtoEqual(\u001b[35m200\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                           \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 41 |\u001b[39m     console\u001b[33m.\u001b[39mlog((\u001b[36mawait\u001b[39m resp\u001b[33m.\u001b[39mbody())\u001b[33m.\u001b[39mtoString())\u001b[33m;\u001b[39m\n \u001b[90m 42 |\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m 43 |\u001b[39m\u001b[0m"
-                  },
-                  "errors": [
+                  "workerIndex": 9,
+                  "status": "passed",
+                  "duration": 186,
+                  "errors": [],
+                  "stdout": [
                     {
-                      "location": {
-                        "file": "E:\\JSTS\\nfocus7pw\\tests\\APITesting.spec.ts",
-                        "column": 27,
-                        "line": 40
-                      },
-                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\nExpected: \u001b[32m200\u001b[39m\nReceived: \u001b[31m401\u001b[39m\n\n\u001b[0m \u001b[90m 38 |\u001b[39m     })\u001b[33m;\u001b[39m\n \u001b[90m 39 |\u001b[39m     \u001b[36mconst\u001b[39m resp \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m context\u001b[33m.\u001b[39m\u001b[36mget\u001b[39m(baseRequestUrl \u001b[33m+\u001b[39m \u001b[32m'/users'\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 40 |\u001b[39m     expect(resp\u001b[33m.\u001b[39mstatus())\u001b[33m.\u001b[39mtoEqual(\u001b[35m200\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                           \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 41 |\u001b[39m     console\u001b[33m.\u001b[39mlog((\u001b[36mawait\u001b[39m resp\u001b[33m.\u001b[39mbody())\u001b[33m.\u001b[39mtoString())\u001b[33m;\u001b[39m\n \u001b[90m 42 |\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m 43 |\u001b[39m\u001b[0m\n\u001b[2m    at E:\\JSTS\\nfocus7pw\\tests\\APITesting.spec.ts:40:27\u001b[22m"
+                      "text": "New product created with id: undefined\n"
                     }
                   ],
-                  "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2024-12-09T09:52:30.803Z",
-                  "attachments": [],
-                  "errorLocation": {
-                    "file": "E:\\JSTS\\nfocus7pw\\tests\\APITesting.spec.ts",
-                    "column": 27,
-                    "line": 40
-                  }
+                  "startTime": "2024-12-09T09:56:42.628Z",
+                  "attachments": []
                 }
               ],
-              "status": "unexpected"
+              "status": "expected"
             }
           ],
-          "id": "10f92f51e2ec11abe784-df2762d5ecf34b698d3c",
+          "id": "10f92f51e2ec11abe784-26ed3b7c2f2cb3ae8f9e",
           "file": "APITesting.spec.ts",
-          "line": 31,
+          "line": 45,
           "column": 5
         }
       ]
@@ -166,11 +139,11 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2024-12-09T09:52:25.225Z",
-    "duration": 5889.493000000715,
-    "expected": 0,
+    "startTime": "2024-12-09T09:56:37.478Z",
+    "duration": 5441.211999999359,
+    "expected": 1,
     "skipped": 0,
-    "unexpected": 1,
+    "unexpected": 0,
     "flaky": 0
   }
 }

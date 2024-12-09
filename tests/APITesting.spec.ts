@@ -40,3 +40,17 @@ test('Basic auth', async({playwright})=>{
     expect(resp.status()).toEqual(200);
     console.log((await resp.body()).toString());
 });
+
+
+test('POST a new product', async ({request})=>{
+    const newProd = await request.post(baseRequestUrl + '/products', {
+        data: {
+            name: 'mouse',
+            price: 20,
+        },
+    });
+    expect(newProd.status()).toEqual(201);
+
+    const jsonData = await newProd.json();
+    console.log('New product created with id: ' + jsonData.id);
+})
