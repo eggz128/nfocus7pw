@@ -27,3 +27,16 @@ test('Check GET response body', async({request})=>{
         throw error
     }
 })
+
+test('Basic auth', async({playwright})=>{
+    const context = await playwright.request.newContext({ //new context required (different from norm without basic auth)
+        baseURL: baseRequestUrl,
+        httpCredentials: {
+            username: 'edge',
+            password: 'edgewords'
+        }
+    });
+    const resp = await context.get(baseRequestUrl + '/users');
+    expect(resp.status()).toEqual(200);
+    console.log((await resp.body()).toString());
+});

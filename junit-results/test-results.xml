@@ -1,28 +1,24 @@
-<testsuites id="" name="" tests="1" failures="1" skipped="0" errors="0" time="5.506492000000551">
-<testsuite name="APITesting.spec.ts" timestamp="2024-12-09T09:41:45.972Z" hostname="chromium" tests="1" failures="1" skipped="0" time="0.151" errors="0">
-<testcase name="Simple Get" classname="APITesting.spec.ts" time="0.151">
-<failure message="APITesting.spec.ts:3:5 Simple Get" type="FAILURE">
-<![CDATA[  [chromium] › APITesting.spec.ts:3:5 › Simple Get ─────────────────────────────────────────────────
+<testsuites id="" name="" tests="1" failures="1" skipped="0" errors="0" time="5.889493000000715">
+<testsuite name="APITesting.spec.ts" timestamp="2024-12-09T09:52:27.881Z" hostname="chromium" tests="1" failures="1" skipped="0" time="0.189" errors="0">
+<testcase name="Basic auth" classname="APITesting.spec.ts" time="0.189">
+<failure message="APITesting.spec.ts:31:5 Basic auth" type="FAILURE">
+<![CDATA[  [chromium] › APITesting.spec.ts:31:5 › Basic auth ────────────────────────────────────────────────
 
-    Error: expect(received).toBe(expected) // Object.is equality
+    Error: expect(received).toEqual(expected) // deep equality
 
     Expected: 200
-    Received: 404
+    Received: 401
 
-      4 |     const resp = await request.get('http://localhost:2002/api/products/6');
-      5 |     try{
-    > 6 |         expect(resp.status()).toBe(200);
-        |                               ^
-      7 |     } catch (error) {
-      8 |         console.log(`Simple GET failed with ${resp.statusText()}` );
-      9 |         throw error;
-        at E:\JSTS\nfocus7pw\tests\APITesting.spec.ts:6:31
+      38 |     });
+      39 |     const resp = await context.get(baseRequestUrl + '/users');
+    > 40 |     expect(resp.status()).toEqual(200);
+         |                           ^
+      41 |     console.log((await resp.body()).toString());
+      42 | });
+      43 |
+        at E:\JSTS\nfocus7pw\tests\APITesting.spec.ts:40:27
 ]]>
 </failure>
-<system-out>
-<![CDATA[Simple GET failed with Not Found
-]]>
-</system-out>
 </testcase>
 </testsuite>
 </testsuites>
